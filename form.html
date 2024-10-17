@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>FORM</title>
+  </head>
+  <body>
+    <fieldset>
+    <h1 id="head"><img src="logo.png" alt="JM BIOTECH" width="70" />FILL THE FORM</h1>
+    <form action="post">
+      <div>
+        <label for="name">Enter Your Fullname :</label>
+        <br>
+        <input
+          type="text"
+          required
+          name="username"
+          id="name"
+          placeholder="Fullname"
+          pattern="[a-z A-Z]+"
+          autofocus
+        />
+      </div>
+      <br>
+      <div>
+        Gender:
+        <input type="radio" name="gender" value="male" id="male" required/>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Female" id="Female" />
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" value="Hijra" id="Hijra" />
+        <label for="Hijra">Hijra</label>
+      </div>
+      <br>
+      Date Of Birth :
+      <div>
+        <input type="date" name="birthdate" required></div><br>
+        Address :
+      <div><input type="address" name="address" required></div> <br>
+      Email :
+      <div><input type="email" name="email" placeholder="Enter Email" required></div>
+      <br>
+      Phone Number :
+      <br>
+      <span>
+        <input type="number" name="number" required>
+      </span>
+      <br>
+      <br>
+      <div> Upload Your CV :
+        <br>
+        <input type="file" name="fileupload" required>
+        <br>
+        Any Other Documents To Upload :
+        <span>
+          <input type="file" name="fileupload">
+        </span>
+      </div>   
+      <br>
+        <input type="submit" value="Submit" required />
+      </div>
+    </form>
+  </fieldset>
+  </body>
+</html>
